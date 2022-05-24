@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-24 08.25.35 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1PNEg2NVYwODsyMDIyLTA1LTI0OzA4LjE3LjA3IFBNOzI3MzY="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1PNEg2NVYwODsyMDIyLTA1LTI0OzA4LjI1LjM1IFBNOzE7Mjg0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RankMytic" type="Integer" array="False" size=""/>
+            <input variable="RankMytic"/>
+            <if expression="RankMytic &lt; 300">
+                <then>
+                    <output expression="&quot;Mytic IV &quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="RankMytic &lt; 400">
+                        <then>
+                            <output expression="&quot;Mytic III &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="RankMytic &lt; 500">
+                                <then>
+                                    <output expression="&quot;Mytic II &quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Mytic I &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
